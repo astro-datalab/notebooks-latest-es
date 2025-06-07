@@ -1,0 +1,84 @@
+allwise
+ANTARES
+authentication
+catalogues
+cluster
+convolution
+crossmatch
+data reduction
+desi spectra
+DRAGONS
+dwarf galaxies
+Exploratory Analysis
+extragalactic
+file service
+galaxies
+Gemini
+gemini llp
+GMOS
+GHOST
+Gravitational wave events
+Healpix map
+histogram
+HowTo
+image cutout
+images
+interactive plot
+Introduction to Machine Learning
+IRAF
+joint query
+Jupyter
+La Serena School for Data Science
+legacy survey
+lightcurve
+LMC
+login
+Lomb-Scargle
+M31
+Milky Way
+movingobject
+mydb
+object classification
+Pal5
+parallax
+period
+photometry
+plot:animation
+plot:cmd
+plot:color-color
+plot:histogram
+plot:quiver
+proper motions
+prospect
+Python
+quasars
+quenching
+query
+redshift
+RRLyrae
+science example
+sdss
+SDSS
+sdss spectra
+SIA
+SMC
+sparcl
+spectra
+spectra stacking
+spectroscopic redshift
+spectroscopy
+specutils
+SQL
+star clusters
+stars
+Supervised Machine Learning
+tap
+time domain
+time series
+token
+transient
+tutorial
+variable
+vospace
+vospace:copy
+WCS

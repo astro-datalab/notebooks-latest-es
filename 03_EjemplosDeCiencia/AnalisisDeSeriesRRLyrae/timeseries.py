@@ -1,5 +1,5 @@
-__author__ = 'Robert Nikutta <robert.nikutta@noirlab.edu>, Astro Data Lab Team <datalab@noirlab.edu>'
-__version__ = '20240427' # yyymmdd
+__author__ = 'Robert Nikutta <robert.nikutta@noirlab.edu>, David Herrera <david.herrera@noirlab.edu>, Astro Data Lab Team <datalab@noirlab.edu>'
+__version__ = '20250714' # yyymmdd
 
 import numpy as np
 from astropy import timeseries
@@ -52,8 +52,8 @@ def plot_raw_lightcurve(t,y,dy,title='',ax=None,lperc=13,rperc=99):
     axins.xaxis.set_major_locator(MaxNLocator(4))
 
     # Main panel chores
-    ax.set_xlabel('modified Julian date - %g (days)' % jd0)
-    ax.set_ylabel('magnitude')
+    ax.set_xlabel('Fecha Juliana modificada - %g (days)' % jd0)
+    ax.set_ylabel('Magnitud')
     ax.invert_yaxis()
     ax.set_title(title)
     #ax.legend(loc='lower left',frameon=True,ncol=1,markerscale=1.5)
@@ -137,13 +137,13 @@ def plot_periodogram(period,power,best_period=None,title='',ax=None):
         fig, ax = plt.subplots()
         
     ax.plot(period,power,lw=0.1)
-    ax.set_xlabel('period (days)')
-    ax.set_ylabel('relative power')
+    ax.set_xlabel('Periodo (días)')
+    ax.set_ylabel('Potencia Relativa ')
     ax.set_title(title)
     
     if best_period is not None:
         ax.axvline(best_period,color='r');
-        ax.text(0.03,0.93,'period = %.3f days' % best_period,transform=ax.transAxes,color='r')
+        ax.text(0.03,0.93,'Periodo = %.3f días' % best_period,transform=ax.transAxes,color='r')
 
 
 def get_folded_phase(t,best_period):
@@ -195,8 +195,8 @@ def plot_folded_lightcurve(t,y,best_period,dy=None,ax=None):
         ax.plot(phase,y,marker=marker,ms=ms,ls='none',lw=lw,color=color,alpha=alpha)
             
     ax.invert_yaxis()
-    ax.set_xlabel('phase (days)')
-    ax.set_ylabel('magnitude')
+    ax.set_xlabel('Fase (días)')
+    ax.set_ylabel('Magnitud')
 
 
 def do_everything(ra,dec,t,y,dy):

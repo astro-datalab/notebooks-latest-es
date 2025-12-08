@@ -45,7 +45,7 @@ una versión HTML de los *notebooks* para mostrarlos completamente renderizados.
 NOTEBOOKS PREDETERMINADOS DE DATALAB
 ====================================
 
-01- GETTING STARTED
+01- COMENZANDO
 
 Los *notebooks* en `01_ComenzandoConDataLab/` proveen una introducción 101 
 a Python, Jupyter y SQL, y muestran, para Data Lab, algunos pasos básicos como 
@@ -54,7 +54,7 @@ disponibles, un ejemplo de consulta y un ejemplo de recorte de imagen. También
 muestran cómo obtener estadísticas de tablas de catálogos para determinar 
 recuentos aproximados de filas y columnas.
 
-02- DATA ACCESS OVERVIEW
+02- SOBRE ACCESO A DATOS
 
 El *notebook* en `02_SobreAccesoADatos/` provee a los usuarios ejemplos de 
 funciones y comandos típicos para explorar y usar algunos de los principales 
@@ -62,7 +62,7 @@ conjuntos de datos alojados por Astro Data Lab. Es una referencia para
 aplicaciones científicas, aunque no tan detallada como los ejemplos científicos 
 específicos mostrados más abajo (ítem 03).
 
-03- SCIENCE EXAMPLES
+03- EJEMPLOS DE CIENCIA
 
 La carpeta `03_ScienceExamples/` contiene *notebooks* que muestran
 aplicaciones científicas utilizando los conjuntos de datos alojados en
@@ -70,62 +70,68 @@ Data Lab. Cada aplicación científica contiene al menos un *notebook*,
 y cada *survey* / conjunto de datos aparece en al menos un *notebook*.  
 En algunos casos, el mismo caso científico aparece usando dos o más *surveys*.
 
+- **AnalysisDeSeriesRRLyrae**: analizar series temporales para
+  medir el período de estrellas RR Lyrae usando fotometría de SMASH.
+
 - **DESI**: introducción al conjunto de datos DESI EDR en Data Lab y una
   comparación entre espectros de SDSS y DESI.
 
-- **DwarfGalaxies**: descubrir galaxias enanas como sobredensidades
-  estelares en los conjuntos de datos DELVE DR1 y DR2, DES DR1,
-  NSC DR1 y DR2, y SMASH.
+- **DESILegacyIS**: un notebook reproduciendo algunas gráficas del artículo de
+  introducción a los Legacy Imaging Surveys de DESI, utilizando los
+  conjuntos de datos Legacy Survey y el AllWISE de Data Lab.
 
-- **EmLineGalaxies**: dos *notebooks* muestran cómo obtener y apilar
+- **DistribucionesDeEnergiaEspectral**:  
+  (1) usar filtros de banda angosta para construir SEDs de objetos del conjunto de datos S-PLUS,  
+  y (2) comparar la fotometría en el infrarrojo medio de unWISE y AllWISE (3.4 y 4.6 micrones).
+
+- **EnanasBlancas**: buscar y analizar enanas blancas y otros objetos
+  peculiares posiblemente eyectados del disco galáctico a velocidades
+  muy altas (> 400 km/s).
+
+- **EstructuraAGranEscala**: inspeccionar estructuras a gran escala
+  utilizando información espectroscópica de SDSS combinada con
+  información fotométrica de los *Legacy Surveys* (LS) del pre-imaging de DESI.
+
+- **EstructuraGalactica**: analizar poblaciones estelares en diferentes
+  partes del Plano Galáctico usando el conjunto de datos DECaPS, y en
+  los campos de SMASH. Otro *notebook* explora cúmulos estelares en Gaia,
+  incluyendo visualizaciones animadas.
+
+- **ExplorandoM31**: explorar la galaxia M31 con el conjunto de datos PHAT.
+
+- **GalaxiesConLineasDeEmision**: dos *notebooks* muestran cómo obtener y apilar
   espectros usando el servicio espectroscópico de Data Lab, y cómo
   detectar *outliers* en el diagrama diagnóstico BPT.
 
-- **ExploringM31**: explorar la galaxia M31 con el conjunto de datos PHAT.
+- **GalaxiasEnanas**: descubrir galaxias enanas como sobredensidades
+  estelares en los conjuntos de datos DELVE DR1 y DR2, DES DR1,
+  NSC DR1 y DR2, y SMASH.
 
-- **GNIRS_DQS_SpectralInventory**: muestra cómo acceder al
+- **GNIRS_DQS_InventarioEspectral**: muestra cómo acceder al
   **Gemini Near Infrared Spectrograph – Distant Quasar Survey
   (GNIRS-DQS)** en Data Lab y ejemplos de gráficos de espectros.
 
-- **GOGREEN_GalaxiesInRichEnvironments**: dos *notebooks* muestran
+- **GOGREEN_GalaxiasEnEntornosEnriquecidos**: dos *notebooks* muestran
   acceso a datos y servicios de recortes de imágenes con la primera
   liberación de datos de GOGREEN y GCLASS, el primer programa
   Gemini Large and Long cuyos productos científicos de alto nivel están
   alojados en Data Lab.
 
-- **GalacticStructure**: analizar poblaciones estelares en diferentes
-  partes del Plano Galáctico usando el conjunto de datos DECaPS, y en
-  los campos de SMASH. Otro *notebook* explora cúmulos estelares en Gaia,
-  incluyendo visualizaciones animadas.
-
-- **LargeScaleStructure**: inspeccionar estructuras a gran escala
-  utilizando información espectroscópica de SDSS combinada con
-  información fotométrica de los *Legacy Surveys* (LS) del pre-imaging de DESI.
-
-- **MagellanicClouds**: examinar las subestructuras estelares que
+- **NubesDeMagallanes**: examinar las subestructuras estelares que
   rodean las Nubes de Magallanes usando los conjuntos de datos VHS y Gaia.
 
-- **Pal5TidalTails**: identificar las colas de marea del cúmulo globular
+- **Pal5ColasDeMarea**: identificar las colas de marea del cúmulo globular
   Palomar 5 en el catálogo NSC, así como en conjunto con Gaia para
   explorar el movimiento propio del cúmulo y sus colas.
 
-- **SpectralEnergyDistributions**:  
-  (1) usar filtros de banda angosta para construir SEDs de objetos del conjunto de datos S-PLUS,  
-  y (2) comparar la fotometría en el infrarrojo medio de unWISE y AllWISE (3.4 y 4.6 micrones).
+- **PGIRCurvasDeLuz** 
 
-- **StarGalQSOSeparation**: usar propiedades fotométricas (colores,
+- **SeparationesEstrellasGalQSO**: usar propiedades fotométricas (colores,
   morfología/parámetros de forma, etc.) para distinguir entre estrellas,
   galaxias y QSOs en los conjuntos de datos DES y LS.
 
-- **TimeSeriesAnalysisRrLyraeStar**: analizar series temporales para
-  medir el período de estrellas RR Lyrae usando fotometría de SMASH.
 
-- **WhiteDwarfs**: buscar y analizar enanas blancas y otros objetos
-  peculiares posiblemente eyectados del disco galáctico a velocidades
-  muy altas (> 400 km/s).
-
-
-Los notebooks de ScienceExamples se encuentran aquí:
+Los notebooks de EjemplosDeCiencia se encuentran aquí:
 
    https://github.com/astro-datalab/notebooks-latest-es/tree/master/03_EjemplosDeCiencia/
 

@@ -64,7 +64,7 @@ específicos mostrados más abajo (ítem 03).
 
 03- EJEMPLOS DE CIENCIA
 
-La carpeta `03_ScienceExamples/` contiene *notebooks* que muestran
+La carpeta `03_EjemplosDeCiencia/` contiene *notebooks* que muestran
 aplicaciones científicas utilizando los conjuntos de datos alojados en
 Data Lab. Cada aplicación científica contiene al menos un *notebook*,
 y cada *survey* / conjunto de datos aparece en al menos un *notebook*.  
@@ -126,7 +126,7 @@ En algunos casos, el mismo caso científico aparece usando dos o más *surveys*.
 
 - **PGIRCurvasDeLuz** 
 
-- **SeparationesEstrellasGalQSO**: usar propiedades fotométricas (colores,
+- **SeparacionesEstrellasGalQSO**: usar propiedades fotométricas (colores,
   morfología/parámetros de forma, etc.) para distinguir entre estrellas,
   galaxias y QSOs en los conjuntos de datos DES y LS.
 
@@ -155,7 +155,7 @@ opciones para lo siguiente:
 - QueryClient: enviar consultas a las bases de datos y recuperar los resultados.
 - SPARCL: descubrir, recuperar, analizar y graficar espectros (SDSS, BOSS, DESI)
           usando el servicio SPARCL.
-- ServicioSia: obtener cutouts usando un servicio de Simple Image Access (SIA).
+- SIAService: obtener cutouts usando un servicio de Simple Image Access (SIA).
 - StoreClient: almacenar datos en un almacenamiento virtual (VOSpace o MyDB).
 
 Los notebooks de ComoHacer se encuentran aquí:
@@ -183,8 +183,8 @@ username@datalab>getlatest-es
 Copia /dlusers/username/notebooks-latest-es/ a notebooks-es_20211118_212650/
 
 # con un directorio de destino como argumento
-username@datalab>getlatest-es mydir
-Copia /dlusers/username/notebooks-latest/ a midir/
+username@datalab>getlatest-es midir
+Copia /dlusers/username/notebooks-latest-es/ a midir/
 
 Todos los notebooks tienen una variable __version__ definida en la
 primera celda. Simplemente ejecutar 'grep version foofile.ipynb'

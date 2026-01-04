@@ -1,4 +1,4 @@
-Version of this file: 20240620
+Version de este archivo: 20260104
 
 CÓMO CONTRIBUIR NOTEBOOKS A ASTRO DATA LAB
 =========================================
@@ -75,24 +75,24 @@ revise y lo acepte.
 
   Por ejemplo:
 
-    mkdir -p 05_Contrib/ExtraGalactic/InterestingScienceCase/
-    cd 05_Contrib/ExtraGalactic/InterestingScienceCase/
-    cp ../../DataLabNotebookTemplate.ipynb InterestingScienceCase.ipynb
+    mkdir -p 05_Contrib/ExtraGalactica/CasoDeCienciaInteresante/
+    cd 05_Contrib/ExtraGalactica/CasoDeCienciaInteresante/
+    cp ../../DataLabNotebookTemplate.ipynb CasoDeCienciaInteresante.ipynb
 
   Algunos consejos:
 
   - Usa tu criterio para decidir dónde colocar tu notebook dentro de 05_Contrib/.
 
   - Si no encaja bajo ningún rubro existente
-    (por ejemplo, 'ExtraGalactic/', 'SolarSystem/', etc.), crea uno nuevo,
+    (por ejemplo, 'ExtraGalactica/', 'SistemaSolar/', etc.), crea uno nuevo,
     es decir, crea el subdirectorio y coloca tu notebook allí.
 
   - Tu notebook debe estar en un sub(sub)directorio independiente propio
 
     Por ejemplo:
-    05_Contrib/ExtraGalactic/LensingEinsteinCross/
+    05_Contrib/ExtraGalactica/LenteCruzDeEinstein/
     o
-    05_Contrib/ExtraGalactic/MicroLensing/
+    05_Contrib/ExtraGalactica/MicroLente/
 
   - Coloca allí también los archivos auxiliares (si los hay), por ejemplo,
     tablas de datos externas usadas en tu notebook, archivos de imagen, etc.
@@ -113,7 +113,7 @@ revise y lo acepte.
 
   Por ejemplo:
 
-    git add 05_Contrib/ExtraGalactic/SuperScienceCase/SuperScienceCase.ipynb
+    git add 05_Contrib/ExtraGalactica/CasoSuperDeCiencia/CasoSuperDeCiencia.ipynb
 
 * Haz commit a tu rama master
 

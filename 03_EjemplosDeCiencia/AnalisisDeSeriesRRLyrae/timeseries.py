@@ -1,5 +1,5 @@
 __author__ = 'Robert Nikutta <robert.nikutta@noirlab.edu>, David Herrera <david.herrera@noirlab.edu>, Astro Data Lab Team <datalab@noirlab.edu>'
-__version__ = '20250714' # yyymmdd
+__version__ = '20251103' # yyymmdd
 
 import numpy as np
 from astropy import timeseries
@@ -15,12 +15,12 @@ def plot_scatter(x,y,ax=None):
         fig, ax = plt.subplots(figsize=(5,5))
     
     # apply units
-    x = (x*u.deg).to('arcmin')
+    x = (x*u.deg).to('arcsec')
     y = (y*u.deg).to('arcsec')
     
     ax.plot(x-np.median(x),y-np.median(y),'bo',ms=3,alpha=0.6)
-    ax.set_xlabel('RA offset (%s)' % x.unit)
-    ax.set_ylabel('DEC offset (%s)' % y.unit)
+    ax.set_xlabel('Desplazamiento en AR ({:s})'.format(x.unit))
+    ax.set_ylabel('Desplazamiento en Dec ({:s})'.format(y.unit))
     ax.axvline(0,c='0.5',lw=1)
     ax.axhline(0,c='0.5',lw=1)
     

@@ -16,209 +16,200 @@
 :........:::..:::::..:::::..:::::..:::::..:::::........::..:::::..::........::::
 
 
-           Welcome to the Astro Data Lab Jupyter Notebook repository
+           Bienvenido al repositorio de *notebooks Jupyter* de Astro Data Lab
+                                EN ESPAÑOL
 
 
                        web: https://datalab.noirlab.edu
                     github: https://github.com/astro-datalab
 
 
-                        Version of this file: 20230728
-                        
+                        Versión de este archivo: 20251205
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-This file contains information on:
+Este archivo contiene información sobre:
 
-- The set of default Jupyter notebooks contained in user accounts
-- How to check for updated versions of the notebooks or for new notebooks
-- How to contribute interesting notebooks to Data Lab for public use 
+- El conjunto de *notebooks Jupyter* predeterminados incluidos en las cuentas 
+  de usuario  
+- Cómo verificar si existen versiones actualizadas de los *notebooks*
+  o si hay *notebooks* nuevos  
+- Cómo contribuir *notebooks* de interés a Data Lab para uso público  
 
-You can follow the order below if you are just getting started.
+Puedes seguir el orden indicado a continuación si recién estás comenzando.
 
-All notebooks are developed for Python 3. Furthermore, an HTML version
-of the notebooks is included in order to show them fully rendered.
+Todos los *notebooks* fueron desarrollados para Python 3. Además, se incluye 
+una versión HTML de los *notebooks* para mostrarlos completamente renderizados.
 
-DEFAULT DATALAB NOTEBOOKS
+NOTEBOOKS PREDETERMINADOS DE DATALAB
+====================================
+
+01- COMENZANDO
+
+Los *notebooks* en `01_ComenzandoConDataLab/` proveen una introducción 101 
+a Python, Jupyter y SQL, y muestran, para Data Lab, algunos pasos básicos como 
+cargar módulos, autenticarse, generar una lista de conjuntos de datos 
+disponibles, un ejemplo de consulta y un ejemplo de recorte de imagen. También 
+muestran cómo obtener estadísticas de tablas de catálogos para determinar 
+recuentos aproximados de filas y columnas.
+
+02- SOBRE ACCESO A DATOS
+
+El *notebook* en `02_SobreAccesoADatos/` provee a los usuarios ejemplos de 
+funciones y comandos típicos para explorar y usar algunos de los principales 
+conjuntos de datos alojados por Astro Data Lab. Es una referencia para 
+aplicaciones científicas, aunque no tan detallada como los ejemplos científicos 
+específicos mostrados más abajo (ítem 03).
+
+03- EJEMPLOS DE CIENCIA
+
+La carpeta `03_EjemplosDeCiencia/` contiene *notebooks* que muestran
+aplicaciones científicas utilizando los conjuntos de datos alojados en
+Data Lab. Cada aplicación científica contiene al menos un *notebook*,
+y cada *survey* / conjunto de datos aparece en al menos un *notebook*.  
+En algunos casos, el mismo caso científico aparece usando dos o más *surveys*.
+
+- **AnalysisDeSeriesRRLyrae**: analizar series temporales para
+  medir el período de estrellas RR Lyrae usando fotometría de SMASH.
+
+- **DESI**: introducción al conjunto de datos DESI EDR en Data Lab y una
+  comparación entre espectros de SDSS y DESI.
+
+- **DESILegacyIS**: un notebook reproduciendo algunas gráficas del artículo de
+  introducción a los Legacy Imaging Surveys de DESI, utilizando los
+  conjuntos de datos Legacy Survey y el AllWISE de Data Lab.
+
+- **DistribucionesDeEnergiaEspectral**:  
+  (1) usar filtros de banda angosta para construir SEDs de objetos del conjunto de datos S-PLUS,  
+  y (2) comparar la fotometría en el infrarrojo medio de unWISE y AllWISE (3.4 y 4.6 micrones).
+
+- **EnanasBlancas**: buscar y analizar enanas blancas y otros objetos
+  peculiares posiblemente eyectados del disco galáctico a velocidades
+  muy altas (> 400 km/s).
+
+- **EstructuraAGranEscala**: inspeccionar estructuras a gran escala
+  utilizando información espectroscópica de SDSS combinada con
+  información fotométrica de los *Legacy Surveys* (LS) del pre-imaging de DESI.
+
+- **EstructuraGalactica**: analizar poblaciones estelares en diferentes
+  partes del Plano Galáctico usando el conjunto de datos DECaPS, y en
+  los campos de SMASH. Otro *notebook* explora cúmulos estelares en Gaia,
+  incluyendo visualizaciones animadas.
+
+- **ExplorandoM31**: explorar la galaxia M31 con el conjunto de datos PHAT.
+
+- **GalaxiesConLineasDeEmision**: dos *notebooks* muestran cómo obtener y apilar
+  espectros usando el servicio espectroscópico de Data Lab, y cómo
+  detectar *outliers* en el diagrama diagnóstico BPT.
+
+- **GalaxiasEnanas**: descubrir galaxias enanas como sobredensidades
+  estelares en los conjuntos de datos DELVE DR1 y DR2, DES DR1,
+  NSC DR1 y DR2, y SMASH.
+
+- **GNIRS_DQS_InventarioEspectral**: muestra cómo acceder al
+  **Gemini Near Infrared Spectrograph – Distant Quasar Survey
+  (GNIRS-DQS)** en Data Lab y ejemplos de gráficos de espectros.
+
+- **GOGREEN_GalaxiasEnEntornosEnriquecidos**: dos *notebooks* muestran
+  acceso a datos y servicios de recortes de imágenes con la primera
+  liberación de datos de GOGREEN y GCLASS, el primer programa
+  Gemini Large and Long cuyos productos científicos de alto nivel están
+  alojados en Data Lab.
+
+- **NubesDeMagallanes**: examinar las subestructuras estelares que
+  rodean las Nubes de Magallanes usando los conjuntos de datos VHS y Gaia.
+
+- **Pal5ColasDeMarea**: identificar las colas de marea del cúmulo globular
+  Palomar 5 en el catálogo NSC, así como en conjunto con Gaia para
+  explorar el movimiento propio del cúmulo y sus colas.
+
+- **PGIRCurvasDeLuz** 
+
+- **SeparacionesEstrellasGalQSO**: usar propiedades fotométricas (colores,
+  morfología/parámetros de forma, etc.) para distinguir entre estrellas,
+  galaxias y QSOs en los conjuntos de datos DES y LS.
+
+
+Los notebooks de EjemplosDeCiencia se encuentran aquí:
+
+   https://github.com/astro-datalab/notebooks-latest-es/tree/master/03_EjemplosDeCiencia/
+
+04- COMO-HACER
+
+La carpeta "04_ComoHacer/" contiene subcarpetas con notebooks que muestran
+cómo usar los servicios de Data Lab con más detalle que los breves ejemplos
+incluidos en los notebooks de Comenzando y SobreAccesoADatos. La
+funcionalidad se presenta con el conjunto completo de palabras clave y
+opciones para lo siguiente:
+
+- AuthClient: autenticación en Data Lab.
+- TablasCruzadas: hacer crossmatch entre una tabla provista por el usuario
+                    y una tabla alojada en Data Lab, además del uso de tablas
+                    precalculadas (pre-crossmatched).
+- ReduccionDeDatos: mostrar cómo realizar la reducción de datos de imágenes GMOS
+                 y la reducción de espectros de rendija larga GMOS usando los
+                 paquetes Gemini DRAGONS y Gemini Pyraf.
+- ServicioDeArchivos: uso de archivos en lugar de tablas de base de datos, incluyendo
+               espectros de SDSS/BOSS.
+- QueryClient: enviar consultas a las bases de datos y recuperar los resultados.
+- SPARCL: descubrir, recuperar, analizar y graficar espectros (SDSS, BOSS, DESI)
+          usando el servicio SPARCL.
+- SIAService: obtener cutouts usando un servicio de Simple Image Access (SIA).
+- StoreClient: almacenar datos en un almacenamiento virtual (VOSpace o MyDB).
+
+Los notebooks de ComoHacer se encuentran aquí:
+
+   https://github.com/astro-datalab/notebooks-latest-es/tree/master/04_ComoHacer/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+CÓMO ACTUALIZAR LOS NOTEBOOKS
+==============================
+
+Data Lab nunca modifica los notebooks que fueron colocados en tu
+directorio notebooks/ durante la creación de la cuenta. Con el tiempo,
+a medida que los notebooks predeterminados evolucionan, diferirán de los
+que tienes en notebooks/.
+
+Para obtener una copia completa de los notebooks predeterminados más
+recientes, haz clic en la esquina superior izquierda del panel de
+JupyterLab en el ícono "+", lo cual abrirá una nueva página de
+launcher. Luego, en la sección "Other", haz clic en la opción
+"Terminal", donde puedes usar la función getlatest-es:
+
+# sin argumento: copia los notebooks más recientes a un directorio con la fecha y hora actual
+username@datalab>getlatest-es
+Copia /dlusers/username/notebooks-latest-es/ a notebooks-es_20211118_212650/
+
+# con un directorio de destino como argumento
+username@datalab>getlatest-es midir
+Copia /dlusers/username/notebooks-latest-es/ a midir/
+
+Todos los notebooks tienen una variable __version__ definida en la
+primera celda. Simplemente ejecutar 'grep version foofile.ipynb'
+mostrará la versión del archivo dado.
+
+Finalmente, copias de este archivo README.txt así como los notebooks
+más recientes se mantienen en la cuenta de GitHub de Data Lab:
+https://github.com/astro-datalab/notebooks-latest-es/ desde donde puedes
+clonarlos libremente.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+DOCUMENTACIÓN Y RECURSOS
 =========================
 
-01- GETTING STARTED
-
-The notebooks in "01_GettingStartedWithDatalab/" provide a 101 intro
-to Python, Jupyter and SQL, and show, for Data Lab, some basic steps
-such as loading modules, authenticating, making a list of available
-datasets, an example query, and an example image cutout. It also shows
-how to obtain the statistics of catalog tables in order to determine
-approximate row and column counts.
-
-02- DATA ACCESS OVERVIEW
-
-The notebook in "02_DataAccessOverview/" provides users with examples
-of typical functions and commands to explore and use some of the main
-datasets hosted by Astro Data Lab. It is a reference for scientific
-applications, though not as detailed as the specific science examples
-given below (item 03).
-
-03- SCIENCE EXAMPLES
-
-The "03_ScienceExamples/" folder contains notebooks that showcase
-scientific applications using the datasets hosted at Data Lab. Each
-science application contains at least one notebook, and each
-survey/dataset is featured in at least one notebook. In some
-instances, the same science case is featured with two or more surveys.
-
-- DESI: introduction to the DESI EDR dataset at Data Lab and a comparison
-  between SDSS and DESI spectra.
-
-- DwarfGalaxies: discover dwarf galaxies as stellar overdensities in
-  the DELVE DR1 and DR2, DES DR1, NSC DR1 and DR2, and SMASH datasets.
-
-- EmLineGalaxies: two notebooks highlight how to obtain and stack
-  spectra using the Data Lab spectro service, and how to detect
-  outliers in the BPT diagnostic diagram.
-
-- ExploringM31: explore the M31 galaxy with the PHAT dataset.
-
-- GNIRS_DQS_SpectralInventory: show how to access the Gemini Near Infrared
-  Spectrograph - Distant Quasar Survey (GNIRS-DQS) at Data Lab and
-  example spectra plots.
-
-- GOGREEN_GalaxiesInRichEnvironments: two notebooks showcase data
-  access and image cutout services with the GOGREEN and GCLASS first
-  data release, the first Gemini Large and Long program whose
-  high-level science products are hosted at Data Lab.
-
-- GalacticStructure: probe stellar populations in different parts of
-  the Galactic Plane using the DECaPS dataset, and in the SMASH
-  fields. Another notebook explores star clusters in Gaia,
-  including animated visualizations.
-
-- LargeScaleStructure: inspect large-scale structures using
-  spectroscopic information from SDSS combined with photometric
-  information from the DESI pre-imaging Legacy Surveys (LS).
-
-- MagellanicClouds: examine the stellar substructures that surround
-  the Magellanic Clouds using the VHS and Gaia datasets.
-		     
-- Pal5TidalTails: identify tidal tails of the globular cluster Palomar
-  5 in the NSC catalog, as well as a jointly with Gaia to
-  explore the proper motion of the cluster and its tails.
-
-- SpectralEnergyDistributions: (1) use narrow-band filters to construct
-  SEDs of objects from the S-PLUS dataset, and (2) compare the mid-
-  infrared photometry from unWISE and AllWISE (3.4 & 4.6 micron).
-
-- StarGalQSOSeparation: use photometric properties (colors,
-  morphology/shape parameters, etc.) to distinguish between stars,
-  galaxies, and QSOs in the DES and LS datasets.
-
-- TimeSeriesAnalysisRrLyraeStar: analyze time-series to measure the
-  period of RR Lyrae stars using photometry from SMASH.
-
-- WhiteDwarfs: search for and analyze white dwarfs and other peculiar
-  objects possibly ejected from the Galactic disk at very high velocities
-  (> 400 km/s).
-
-The ScienceExamples notebooks are located here:
-
-   https://github.com/astro-datalab/notebooks-latest/tree/master/03_ScienceExamples/
-
-04- HOW-TOS
-
-The "04_HowTos/" folder contains sub-folders with notebooks that show
-how to use Data Lab services with more detail than the brief examples
-included in the GettingStarted and DataAccessOverview notebooks. The
-functionality is shown for the full set of keywords and options for
-the following:
-
-- AuthClient: authenticating with the Data Lab
-- CrossmatchTables: crossmatching a user-provided table against a table
-		    hosted by Data Lab, and using pre-crossmatched tables.
-- DataReduction: showing how to perform GMOS imaging data reduction and GMOS
-		 longslit spectroscopy data reduction using the Gemini DRAGONS
-		 and Gemini Pyraf packages.
-- FileService: using files rather than database tables, including spectra from
-	       SDSS/BOSS.
-- QueryClient: sending queries to the databases and retrieving results.
-- SPARCL: discovering, retrieving, analyzing, and plotting spectra (SDSS, BOSS,
-	  DESI) using the SPARCL service.
-- SiaService: obtaining cutouts using a Simple Image Access service.
-- StoreClient: storing data in virtual storage (VOSpace or MyDB).
-
-The How-To notebooks are located here:
-
-   https://github.com/astro-datalab/notebooks-latest/tree/master/04_HowTos/
-
-05- CONTRIB
-
-The "05_Contrib/" directory holds community-contributed notebooks to
-Data Lab, including ANTARES example notebooks. Please see
-./CONTRIBUTING file for detailed instructions.
-
-06 - EPO
-
-The "06_EPO/" directory provides "Education and Public Outreach"
-notebooks, aimed at school students and teachers interested in
-astronomical research and in teaching astronomy. The currently three
-sub-directories contain:
-
-- TeenAstronomyCafe: notebooks originally developed for the
-  "TeenAstronomy Café" activities organized jointly by the LSST and
-  NOIRLab's outreach and engagement departments (middle/high school or
-  undergraduate astronomy)
-
-- e-TeenAstronomyCafe: same, but these notebooks are executable at
-  Colab
-
-- LaSerenaSchoolForDataScience: notebooks developed for the La Serena
-  School for Data Science (undergraduate & graduate level), including
-  machine learning, classification problems, and more.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-HOW TO UPDATE NOTEBOOKS
-=======================
-
-Data Lab never modifies the notebooks that were placed in your
-notebooks/ directory during account creation. Over time, as the
-default notebooks evolve, they will diverge from those in notebooks/.
-
-To obtain a full copy of the newest default notebooks, click in the
-top-left corner of the JupyterLab interface dashboard on the "+" icon,
-which opens a new launcher page. Then, in the "Other" section, click
-on the "Terminal" option, where you can use the `getlatest` function:
-
-# without argument: copies the latest notebooks to a directory named with current date and time
-username@datalab>getlatest
-Copied /dlusers/username/notebooks-latest/ to notebooks_20211118_212650/
-
-# with target directory as argument
-username@datalab>getlatest mydir
-Copied /dlusers/username/notebooks-latest/ to mydir/
-
-All notebooks have a __version__ variable defined in the very first
-cell. Simply running 'grep version foofile.ipynb' will show the
-version of the given file.
-
-Finally, copies of this README.txt file as well as the latest
-notebooks are kept at the Data Lab GitHub account:
-https://github.com/astro-datalab/notebooks-latest/ from where you can
-freely clone them.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-DOCUMENTATION & RESOURCES
-=========================
-
-The User Manual includes a tutorial on using Jupyter Notebooks with the Data Lab:
+El Manual de Usuario incluye un tutorial sobre el uso de Jupyter Notebooks con Data Lab:
 https://datalab.noirlab.edu/docs/manual/UsingAstroDataLab/JupyterNotebooks/JupyterNotebooks.html
 
-The User Manual also includes additional information on the Science Examples 
-featured in the notebooks:
+El Manual de Usuario también incluye información adicional sobre los Ejemplos de Ciencia
+presentados en los notebooks:
 https://datalab.noirlab.edu/docs/manual/UsingAstroDataLab/ScienceExamples/index.html
 
-Helpful advice on using SQL and writing queries can be found here: 
+Consejos útiles sobre el uso de SQL y la escritura de consultas pueden encontrarse aquí:
 https://datalab.noirlab.edu/docs/manual/UsingAstroDataLab/SQLGotchas/SQLGotchas/SQLGotchas.html
 
-Lastly, please visit the Helpdesk to see the FAQs or ask your questions: 
+Finalmente, por favor visita el Helpdesk para ver las FAQs o hacer tus preguntas:
 https://datalab.noirlab.edu/help/
+

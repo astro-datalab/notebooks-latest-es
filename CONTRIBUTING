@@ -1,134 +1,147 @@
-Version of this file: 20240620
+Version de este archivo: 20260104
 
-HOW TO CONTRIBUTE NOTEBOOKS TO ASTRO DATA LAB
-=============================================
+CÓMO CONTRIBUIR NOTEBOOKS A ASTRO DATA LAB
+=========================================
 
-We very much welcome user-contributed notebooks to Data Lab.
+Damos una cálida bienvenida a los notebooks aportados por usuarios a Data Lab.
 
-A few words about rules and intent
-----------------------------------
+Algunas palabras sobre las reglas y la intención
+------------------------------------------------
 
-- Your notebook should demonstrate or cover a case that is different
-  from those covered in other notebooks in the same repository.
-  
-- You agree that your contributed notebook moves into the public
-  domain, i.e. that anyone can propose to change it (via pull
+- Tu notebook debe demostrar o cubrir un caso que sea diferente
+  de los cubiertos en otros notebooks del mismo repositorio.
+
+- Aceptas que el notebook que contribuyas pase al dominio público,
+  es decir, que cualquiera pueda proponer cambios (mediante pull
   requests).
 
-- You maintain your claim to fame by including your name and email in
-  the first cell of the notebook. Your name will never be
-  removed. Other names may be added when the notebook is changed.
+- Mantienes tu reconocimiento incluyendo tu nombre y correo electrónico
+  en la primera celda del notebook. Tu nombre nunca será eliminado.
+  Otros nombres podrán añadirse cuando el notebook sea modificado.
 
-- Your notebook must roughly follow the template which we provide.
+- Tu notebook debe seguir de manera aproximada la plantilla que proporcionamos.
 
-- Any notebook you add must be in ready form, i.e. all cells must run
-  correctly, and the notebook must be 'cleaned'. ESPECIALLY: it must
-  not contain any passwords or tokens.
+- Cualquier notebook que añadas debe estar en forma final, es decir,
+  todas las celdas deben ejecutarse correctamente y el notebook debe
+  estar “limpio”. ESPECIALMENTE: no debe contener contraseñas ni tokens.
 
-The steps to contributing
+Los pasos para contribuir
 -------------------------
 
-You can develop your notebook either in the Astro Data Lab notebook
-server or locally on your machine.
+Puedes desarrollar tu notebook ya sea en el servidor de notebooks de
+Astro Data Lab o localmente en tu máquina.
 
-In either case, when your notebook is ready to go, you will have to
-make a pull request (PR) on GitHub, so that the Data Lab team can review
-and accept your notebook.
+En cualquiera de los dos casos, cuando tu notebook esté listo, deberás
+hacer un pull request (PR) en GitHub, para que el equipo de Data Lab lo
+revise y lo acepte.
 
-* If you want to develop on the Data Lab notebook server:
+* Si quieres desarrollar en el servidor de notebooks de Data Lab:
 
-  - Start your notebook server at https://datalab.noirlab.edu/devbooks
-  - Copy notebooks-latest/DataLabNotebookTemplate.ipynb to some other place and rename it
-  - Develop the notebook
+  - Inicia tu servidor de notebooks en https://datalab.noirlab.edu/devbooks
+  - Copia notebooks-latest-es/DataLabNotebookTemplate.ipynb a otro lugar y cámbiale el nombre
+  - Desarrolla el notebook
 
-* If you want to develop on your own machine:
+* Si quieres desarrollar en tu propia máquina:
 
-  - Install the datalab client code
+  - Instala el código cliente de datalab
 
       pip install --upgrade astro-datalab
-    
-    More detailed instructions: https://github.com/astro-datalab/datalab (the README.md file)
 
-  - Fork the 'notebooks-latest' repository on GitHub
+    Instrucciones más detalladas: https://github.com/astro-datalab/datalab (el archivo README.md)
 
-    Log in to GitHub, go to https://github.com/astro-datalab/notebooks-latest
-    
-    Click on "Fork" in the upper right corner.
+  - Haz un fork del repositorio 'notebooks-latest-es' en GitHub
 
-    The forked repository will be under https://github.com/youongithub/notebooks-latest.git where 'youongithub' is your GitHub user name.
+    Inicia sesión en GitHub y ve a https://github.com/astro-datalab/notebooks-latest-es
 
-  - Clone from your fork
+    Haz clic en "Fork" en la esquina superior derecha.
 
-    On your local machine:
+    El repositorio bifurcado estará en
+    https://github.com/tuengithub/notebooks-latest-es.git,
+    donde 'tuengithub' es tu nombre de usuario en GitHub.
 
-      cd foo # some local directory
-      git clone https://github.com/youongithub/notebooks-latest.git
+  - Clona desde tu fork
 
-* Your contributed notebook goes inside the '05_Contrib/' directory
+    En tu máquina local:
 
-  ... unless you've had prior communication with the Data Lab team and were asked to place it elsewhere.
+      cd foo  # algún directorio local
+      git clone https://github.com/tuengithub/notebooks-latest-es.git
 
-  Decide where under '05_Contrib/' your notebook will live.
+* Tu notebook contribuido debe ir dentro del directorio '05_Contrib/'
 
-  For instance:
+  ... a menos que hayas tenido comunicación previa con el equipo de
+  Data Lab y te hayan pedido colocarlo en otro lugar.
 
-    mkdir -p 05_Contrib/ExtraGalactic/InterestingScienceCase/
-    cd 05_Contrib/ExtraGalactic/InterestingScienceCase/
-    cp ../../DataLabNotebookTemplate.ipynb InterestingScienceCase.ipynb
+  Decide dónde vivirá tu notebook dentro de '05_Contrib/'.
 
-  Some advice:
+  Por ejemplo:
 
-  - Use your judgment where to place you notebook under 05_Contrib/.
+    mkdir -p 05_Contrib/ExtraGalactica/CasoDeCienciaInteresante/
+    cd 05_Contrib/ExtraGalactica/CasoDeCienciaInteresante/
+    cp ../../DataLabNotebookTemplate.ipynb CasoDeCienciaInteresante.ipynb
 
-  - If it does not fit under any existing rubric
-    (e.g. 'ExtraGalactic/', 'SolarSystem/', etc.), start a new one,
-    i.e. make the sub-directory and place your notebook there.
+  Algunos consejos:
 
-  - Your notebook must be in a stand-alone sub(sub)directory of its own
+  - Usa tu criterio para decidir dónde colocar tu notebook dentro de 05_Contrib/.
 
-    E.g. 05_Contrib/ExtraGalactic/LensingEinsteinCross/
-    or   05_Contrib/ExtraGalactic/MicroLensing/
-    
-  - Place auxiliary files (if any) there as well, e.g. external data
-    tables used in your notebook, image files, etc. Make sure to keep
-    their size small.
+  - Si no encaja bajo ningún rubro existente
+    (por ejemplo, 'ExtraGalactica/', 'SistemaSolar/', etc.), crea uno nuevo,
+    es decir, crea el subdirectorio y coloca tu notebook allí.
 
-* Develop and test your notebook
+  - Tu notebook debe estar en un sub(sub)directorio independiente propio
 
-  Make sure that your notebook:
+    Por ejemplo:
+    05_Contrib/ExtraGalactica/LenteCruzDeEinstein/
+    o
+    05_Contrib/ExtraGalactica/MicroLente/
 
-    - Follows the rough structure, and the instructions in the DL notebook template.
-    - Runs (all cells).
-    - Is clean, and free of cruft.
-    - Has no passwords or tokens, or any other sensitive information.
-    - Uses keywords from the list in ./keywords.txt
-      If you need new keywords, add them to the list.
+  - Coloca allí también los archivos auxiliares (si los hay), por ejemplo,
+    tablas de datos externas usadas en tu notebook, archivos de imagen, etc.
+    Asegúrate de mantener su tamaño pequeño.
 
-* Add the notebook and any aux files to your git tracking
+* Desarrolla y prueba tu notebook
 
-  E.g.
+  Asegúrate de que tu notebook:
 
-    git add 05_Contrib/ExtraGalactic/SuperScienceCase/SuperScienceCase.ipynb
+    - Siga la estructura general y las instrucciones de la plantilla de notebook de DL.
+    - Se ejecute correctamente (todas las celdas).
+    - Esté limpio y libre de residuos.
+    - No contenga contraseñas ni tokens, ni ningún otro tipo de información sensible.
+    - Use palabras clave de la lista en ./keywords.txt
+      Si necesitas nuevas palabras clave, añádelas a la lista.
 
-* Commit to your master
+* Añade el notebook y cualquier archivo auxiliar al seguimiento de git
 
-    git commit -a -m "Add contributed science case notebook on XYZ science"
+  Por ejemplo:
 
-* Push to your fork on GitHub
+    git add 05_Contrib/ExtraGalactica/CasoSuperDeCiencia/CasoSuperDeCiencia.ipynb
+
+* Haz commit a tu rama master
+
+    git commit -a -m "Añadir notebook contribuido de caso científico sobre ciencia XYZ"
+
+* Haz push a tu fork en GitHub
 
    git push origin master
 
-* Make a pull request (PR) on GitHub:
+* Crea un pull request (PR) en GitHub:
 
-  - Go to your fork of notebooks-latest on GitHub
-  - Click on "New pull request", and follow the instructions
+  - Ve a tu fork de notebooks-latest-es en GitHub
+  - Haz clic en "New pull request" y sigue las instrucciones
 
-  The DL team will review your notebook and either suggest some
-  changes or accept the PR. Once accepted, your notebook will become
-  part of the default set of notebooks delivered with DL.
+  El equipo de DL revisará tu notebook y sugerirá algunos cambios
+  o aceptará el PR. Una vez aceptado, tu notebook pasará a formar
+  parte del conjunto por defecto de notebooks distribuidos con DL.
 
-As always, please ask the DL team any questions you have at <datalab@noirlab.edu>
+Como siempre, no dudes en hacerle cualquier pregunta al equipo de DL en <datalab@noirlab.edu>
 
-* A note on HTML-rendered views of notebooks
+* Nota sobre las vistas HTML renderizadas de los notebooks
 
-In the checked-out 'notebooks-latest' repository you will see that for every notebook `*.ipynb` file there is an identically-named companion `*.html` file. These are rendered HTML views of the notebooks, to make previewing in the browser easy. The HTML files are generated automatically when you create a PR, both if you are contributing a new notebook, or editing an existing one. The reviewer of your PR will see both the `*.ipynb` and `*.html` files. In short: never worry about the HTML files.
+En el repositorio 'notebooks-latest-es' descargado, verás que para cada archivo
+`*.ipynb` existe un archivo acompañante `*.html` con el mismo nombre.
+Estos son vistas HTML renderizadas de los notebooks, pensadas para facilitar
+la previsualización en el navegador. Los archivos HTML se generan automáticamente
+cuando creas un PR, tanto si estás contribuyendo un notebook nuevo como si estás
+editando uno existente. La persona que revise tu PR verá tanto los archivos
+`*.ipynb` como los `*.html`. En resumen: nunca te preocupes por los archivos HTML.
+
+

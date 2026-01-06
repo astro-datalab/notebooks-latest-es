@@ -1,39 +1,39 @@
-# DESI Example Notebooks
+# Cuadernos de Ejemplo de DESI
 
-The Astro Data Lab includes a collection of notebooks showcasing the DESI data. They are distributed in a few locations as follows.
+El Astro Data Lab incluye una colección de cuadernos que muestran cómo trabajar con los datos de DESI. Estos están distribuidos en varias ubicaciones, como se detalla a continuación.
 
-## This folder: `03_ScienceExamples/DESI/`
+## Esta carpeta: `03_EjemplosDeCiencia//DESI/`
 
-- `01_Intro_to_DESI_DR1.ipynb` shows how to access the redshift catalog from the Astro Data Lab database, how to separate objects based on the DESI targeting information, how to access all the available spectra for a given object using [SPARCL (SPectra Analysis and Retrievable Catalog Lab)](https://astrosparcl.datalab.noirlab.edu), and finally how to plot the "best" spectrum.
+- `01_Intro_a_DESI_DR1.ipynb` muestra cómo acceder al catálogo de corrimientos al rojo desde la base de datos del Astro Data Lab, cómo separar objetos según la información de selección de blancos de DESI, cómo acceder a todos los espectros disponibles para un objeto dado usando [SPARCL (SPectra Analysis and Retrievable Catalog Lab)](https://astrosparcl.datalab.noirlab.edu), y finalmente cómo graficar el espectro “mejor”.
 
-- `01_Intro_to_DESI_EDR.ipynb` is the previous Early Data Release (EDR) version with similar functionality: how to access the redshift catalog from the Astro Data Lab database, how to separate objects based on the DESI targeting information, how to access all the available spectra for a given object using SPARCL, and finally how to plot the "best" spectrum. We recommend using the latest (DR1) version instead as it supersedes the EDR data.
+- `01_Intro_a_DESI_EDR.ipynb` es la versión anterior del Lanzamiento de Datos Temprano (EDR), con funcionalidad similar: cómo acceder al catálogo de corrimientos al rojo desde la base de datos del Astro Data Lab, cómo separar objetos según la información de selección de blancos de DESI, cómo acceder a todos los espectros disponibles para un objeto usando SPARCL, y finalmente cómo graficar el espectro “mejor”. Recomendamos utilizar la versión más reciente (DR1), ya que reemplaza los datos del EDR.
 
-- `01a_Intro_to_DESI_DR1-Py3.ipynb` is adapted from the `01_Intro_to_DESI_DR1.ipynb` to work without any DESI software. It requires a Python-3 environment with the datalab and sparcl clients installed (both can be pip-installed locally by users if not working in the Astro Data Lab Jupyter server).
+- `01a_Intro_a_DESI_DR1-Py3.ipynb` está adaptado de `01_Intro_to_DESI_DR1.ipynb` para funcionar sin el software de DESI. Requiere un entorno Python 3 con los clientes `datalab` y `sparcl` instalados (ambos pueden instalarse con `pip` localmente si no se trabaja en el servidor Jupyter del Astro Data Lab).
 
-- `02_DESI_SDSS_Comparison.ipynb` shows how to use SPARCL data discovery to find available SDSS DR16 and DESI DR1 spectra of sources in a specific region of the sky with redshift and spectype constraints, how to retrieve and compare spectra for the same galaxy observed with both SDSS and DESI.
+- `02_Comparacion_DESI_SDSS.ipynb` muestra cómo usar la búsqueda de datos de SPARCL para encontrar espectros disponibles de SDSS DR16 y DESI DR1 de fuentes en una región específica del cielo con restricciones en redshift y tipo espectral, cómo recuperar y comparar espectros de la misma galaxia observada con SDSS y DESI.
 
-## How-to folder: `04_HowTos/`
+## Carpeta “Cómo Hacer”: `04_ComoHacer/`
 
-- `QueryClient/How_to_query_DESI_DR1_Data.ipynb` demonstrates a variety of queries to the Astro Data Lab `desi_dr1` database.
+- `QueryClient/Como_consultar_datos_de_DESI_DR1.ipynb` demuestra una variedad de consultas a la base de datos `desi_dr1` del Astro Data Lab.
 
-- `QueryClient/How_to_query_DESI_EDR_Data.ipynb` demonstrates a variety of queries to the Astro Data Lab `desi_edr` database (note: superseded by the DR1 version).
+- `QueryClient/Como_consultar_datos_de_DESI_EDR.ipynb` demuestra una variedad de consultas a la base de datos `desi_edr` del Astro Data Lab (nota: reemplazada por la versión DR1).
 
-- `SPARCL/How_to_use_SPARCL.ipynb` provides a basic introduction to using the SPARCL client (or sparclclient) to find and retrieve spectroscopic data within a Python notebook context. [(SPARCL = SPectra Analysis and Retrievable Catalog Lab)](https://astrosparcl.datalab.noirlab.edu)
+- `SPARCL/Como_usar_SPARCL.ipynb` proporciona una introducción básica al uso del cliente SPARCL (`sparclclient`) para encontrar y recuperar datos espectroscópicos dentro de un entorno tipo notebook en Python. [(SPARCL = SPectra Analysis and Retrievable Catalog Lab)](https://astrosparcl.datalab.noirlab.edu)
 
-- `SPARCL/Plot_SPARCL_Spectra_with_Jdaviz.ipynb` shows how to retrieve spectra from SPARCL and display them using the [Jdaviz](https://jdaviz.readthedocs.io/en/latest/index.html) data analysis visualization tool.
+- `SPARCL/Graficar_Espectros_con_Jdaviz.ipynb` muestra cómo recuperar espectros desde SPARCL y visualizarlos usando la herramienta de análisis y visualización [Jdaviz](https://jdaviz.readthedocs.io/en/latest/index.html).
 
-- `SPARCL/Plot_SPARCL_Spectra_with_Prospect.ipynb` shows how to retrieve spectra from SPARCL and display them using the [prospect](https://desi-prospect.readthedocs.io/en/latest/) interactive spectral visualization tool.
+- `SPARCL/raficar_Espectros_con_Prospect.ipynb` muestra cómo recuperar espectros desde SPARCL y visualizarlos usando la herramienta interactiva de visualización espectral [prospect](https://desi-prospect.readthedocs.io/en/latest/).
 
-## Other useful references
+## Otras referencias útiles
 
-### DESI Data Documentation Websites
+### Sitios de documentación de datos de DESI
 
-The [DESI Landing Page](https://datalab.noirlab.edu/desi/index.php) at Astro Data Lab includes a brief overview of DESI and the early data release. The [Data access page](https://datalab.noirlab.edu/desi/access.php) describes multiple ways of accessing data through the Astro Data Lab or SPARCL.
+La [página principal de DESI](https://datalab.noirlab.edu/desi/index.php) en el Astro Data Lab incluye una breve introducción a DESI y su primer lanzamiento de datos. La [página de acceso a datos](https://datalab.noirlab.edu/desi/access.php) describe múltiples formas de acceder a los datos a través del Astro Data Lab o SPARCL.
 
-The [DESI Data Documentation website](https://data.desi.lbl.gov/doc/) describes data access, data format, data releases, and includes links to technical papers as well as information on data license and acknowledgments. It is the overriding reference for official DESI information.
+El sitio web de [Documentación de Datos de DESI](https://data.desi.lbl.gov/doc/) describe el acceso, formato y lanzamientos de datos, e incluye enlaces a artículos técnicos, información sobre licencias de datos y reconocimientos. Es la referencia principal y oficial sobre DESI.
 
-### Astro Data Lab & DESI Help
+### Ayuda con Astro Data Lab y DESI
 
-If you have an Astro Data Lab question, please visite the [Data Lab User Forum](https://datalab.noirlab.edu/help/).
+Si tienes una pregunta sobre el Astro Data Lab, por favor visita el [Foro de Usuarios de Data Lab](https://datalab.noirlab.edu/help/).
 
-If you have a DESI question, please visit the [DESI User Forum](https://help.desi.lbl.gov). 
+Si tienes una pregunta sobre DESI, por favor visita el [Foro de Usuarios de DESI](https://help.desi.lbl.gov).
